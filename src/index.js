@@ -1,13 +1,9 @@
-import generateJoke from "./generateJoke";
 import "./style/style.scss";
-import laughing from "./assets/laughing.svg";
+import Img from "./assets/laughing.svg";
+import generateJoke from "./generateJoke";
 
-const laughImg = document.getElementById("loughImage");
-laughImg.src = laughing;
+const img = document.getElementById("img");
+img.src = Img;
 
-document.getElementById("jokeBtn").addEventListener("click", generateJoke); //button
-
-// document.getElementById("joke").innerHTML = jokeResponse.data.joke;
-
-
-
+//activated event listener in generateJoke method
+generateJoke();
